@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div >
       <h1>Hello {user}, your age {age}</h1>
-      <button onClick={abc}>change user</button>
+      <button className ="btn" onClick={abc}>change user</button>
       
     </div>
   );
