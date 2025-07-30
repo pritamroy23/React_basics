@@ -1,17 +1,14 @@
 import React from 'react'
-const App = () => {
-  const user = "pritam";
-  const abc =() => {
-    console.log("button clicked");
-  }
-  const age = 20;
-  return (
-    <div >
-      <h1>Hello {user}, your age {age}</h1>
-      <button className ="btn" onClick={abc}>change user</button>
-      
-    </div>
-  );
 
+const App = () => {
+  const [a, setA] = React.useState(10)
+ 
+  return (
+    <div> 
+      <h1>value of a is {a} </h1>
+      <button>changeA</button>
+    </div>
+  )
 }
-export default App;
+
+export default App
