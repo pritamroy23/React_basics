@@ -1,16 +1,25 @@
-import React from 'react'
+import React,  {useState}  from 'react';
+
+
+
 
 const App = () => {
-  const [a, setA] = React.useState(10)
-  const changeA = () => {
-    setA(20);
-  }
+ const inc =() => {
+ setA(a + 1);
+ };
+ const dec =() => {
+  setA(a - 1);
+ }
+  const [a, setA] = useState(0)
   return (
-    <div> 
-      <h1>value of a is {a} </h1>
-      <button onClick={changeA}>change A</button>
+ 
+    <div >
+    <h3>Number is {a}</h3>
+    <button onClick ={inc}>increment</button>
+    <button onClick= {dec}>decrement</button>
     </div>
-  )
-}
+  );
+};
+
 
 export default App
